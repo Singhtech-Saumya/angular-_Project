@@ -1,0 +1,11 @@
+
+Parent pass myAPI to Child 
+<app-child [iteam]="title"  (DataEvent)="getData($event)"></app-child>
+
+
+<form  #f="ngForm" (ngSubmit)="ChangeValue(f.value)">\
+ <input type="text"  name="name" ngModel> 
+ <button >Submit</button>
+  </form>
+
+  <app-api-call></app-api-call>
